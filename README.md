@@ -26,3 +26,5 @@ https://zoom.us/j/95683611609?pwd=bGdtUFNMVlR4ckwxOUhFQW1lM1VNQT09
         - .mdファイルで作成する
 
 - sample.csvを使っていろいろやってみる。
+    - sample.csvを使って曲をランダムに。
+    - scraping.pyを修正して、曲を取得しやすくする。
