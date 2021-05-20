@@ -19,7 +19,7 @@ https://zoom.us/j/95683611609?pwd=bGdtUFNMVlR4ckwxOUhFQW1lM1VNQT09
         https://qiita.com/ohbashurequestsnsuke/items/e7c673db606a6dced8a6
     - pipを導入して、下記のライブラリをインストール
         - `pip install requests`
-        - `pip install requests`
+        - `pip install beautifulsoup4`
 
 - markdown記法について
     - summaryを作成するのに便利な記法
