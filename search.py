@@ -10,5 +10,3 @@ for row in f:
         print(row[5])
     #else:
         #print("No Hit!!")
-
-
