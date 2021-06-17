@@ -8,13 +8,16 @@ from pandas.io.parsers import count_empty_vals
 
 all_list = pd.read_csv("./csv/sample.csv")
 
+count1 = 0
+count2 = 0
+
 for index, row in all_list.iterrows():
-    if search1 in row[5] and search2 in row[5]:
+    if search1 in row[5] or search2 in row[5]:
+        count1 = count1 + row[5].count(search1)
+        count2 = count2 + row[5].count(search2)
         print(row[1],search1 + "の数は" + str(row[5].count(search1)),search2 + "の数は" + str(row[5].count(search2)))
 
-
-    #else:
-        #print("No Hit!!")
+print(search1 + "の数は" + str(count1),search2 + "の数は" + str(count2))
 
 """
 search = input("好きな単語を入力:")
