@@ -20,7 +20,7 @@ print("あなたが調べたいのは" + search)
 import csv
 csv_file = open("./csv/sample.csv", "r",  errors="", newline="" )
 f = csv.reader(csv_file, delimiter=",", doublequote=True, lineterminator="\r\n", quotechar='"', skipinitialspace=True)
-print(f)
+#print(f)要らないprint消しました
 
 for row in f:
     #print(row)
