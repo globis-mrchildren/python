@@ -1,13 +1,15 @@
-search = input("好きな文字を入力:")
-print("あなたが調べたいのは" + search)
+search = input("好きな言葉は？")
+print(search + "の出現回数は…")
 
 import pandas as pd
 
 all_list = pd.read_csv("./csv/sample.csv")
 
+count = 0
+
 for index, row in all_list.iterrows():
-    if search in row[1]:
-        print(row[5])
-        break
+    count = count + row[5].count(search)
+
+print("全部で" + str(count) + "個")
     #else:
         #print("No Hit!!")
