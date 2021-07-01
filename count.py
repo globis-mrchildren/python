@@ -12,8 +12,6 @@ for index, row in all_list.iterrows():
     count = count + row[5].count(search)
 
 print("全部で" + str(count) + "個")
-    #else:
-        #print("No Hit!!")
 
 """
 search = input("好きな単語を入力:")
