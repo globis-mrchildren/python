@@ -36,3 +36,17 @@ https://zoom.us/j/95683611609?pwd=bGdtUFNMVlR4ckwxOUhFQW1lM1VNQT09
         - (発売年を入れたら、その年に発売された曲が表示される)
     - ぶっしー
         - 歌詞に出てくる単語を探す
+
+## 7/1の内容
+- こうちゃん
+    - csvにアルバム名と発売年を入れる
+- ぶっしー
+    - アルバムを入力すると、曲名が全て表示される
+
+こうちゃん
+scraping.pyの最下部を下記のように修正してcsvを作るとラク
+```
+file_name = 'sort'
+url = 'https://www.uta-net.com/artist/684/6/'
+create_df(file_name, url)
+```
